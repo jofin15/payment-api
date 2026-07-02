@@ -48,7 +48,7 @@ resource "google_cloud_run_v2_service" "payment_api" {
   }
 
   traffic {
-    type    = "TRAFFIC_TARGET_TYPE_LATEST"
+    type    = "TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST"
     percent = 100
   }
 }
