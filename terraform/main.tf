@@ -1,4 +1,9 @@
 terraform {
+  backend "gcs" {
+    bucket = "payments-dev-478615-tfstate"
+    prefix = "payment-api/state"
+  }
+
   required_providers {
     google = {
       source  = "hashicorp/google"
